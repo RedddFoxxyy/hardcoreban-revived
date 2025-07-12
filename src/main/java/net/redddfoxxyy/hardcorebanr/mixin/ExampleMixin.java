@@ -1,4 +1,4 @@
-package in.redddfoxxyy.hardcorebanr.mixin;
+package net.redddfoxxyy.hardcorebanr.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;

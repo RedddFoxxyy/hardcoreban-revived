@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "in.redddfoxxyy.hardcorebanr.mixin",
+	"package": "net.redddfoxxyy.hardcorebanr.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

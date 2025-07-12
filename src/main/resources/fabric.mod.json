@@ -3,27 +3,27 @@
 	"id": "hardcoreban-revived",
 	"version": "${version}",
 	"name": "HardcoreBan-Revived",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A hardcore ban mod for server based on banhammer.",
 	"authors": [
-		"Me!"
+		"RedddFoxxyy"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/RedddFoxxyy/hardcoreban-revived"
 	},
-	"license": "CC0-1.0",
+	"license": "GPL-3.0",
 	"icon": "assets/hardcoreban-revived/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
 			{
-				"value": "in.redddfoxxyy.hardcorebanr.HardcoreBanRevived",
+				"value": "net.redddfoxxyy.hardcorebanr.HardcoreBanRevived",
 				"adapter": "kotlin"
 			}
 		],
 		"fabric-datagen": [
 			{
-				"value": "in.redddfoxxyy.hardcorebanr.HardcoreBanRevivedDataGenerator",
+				"value": "net.redddfoxxyy.hardcorebanr.HardcoreBanRevivedDataGenerator",
 				"adapter": "kotlin"
 			}
 		]
