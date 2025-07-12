@@ -1,7 +1,7 @@
 package net.redddfoxxyy.hardcorebanr
 
 data class HardcoreBanConfig(
-	val banDurationSeconds: Long = 30,
+	val banDurationSeconds: Long = 604800, // 7 days default
 	val banMessage: String = "You got banned for dying",
 	val enableHardcoreBans: Boolean = true
 ) {
