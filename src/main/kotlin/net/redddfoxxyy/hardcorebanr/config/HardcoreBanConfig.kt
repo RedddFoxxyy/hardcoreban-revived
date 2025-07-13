@@ -19,7 +19,7 @@ data class HardcoreBanConfig(
 			encodeDefaults = true
 		}
 
-		fun load(): HardcoreBanConfig {
+		internal fun load(): HardcoreBanConfig {
 			return if (configFile.exists()) {
 				try {
 					json.decodeFromString(configFile.readText())

@@ -1,6 +1,6 @@
-package net.redddfoxxyy.hardcorebanr
+package net.redddfoxxyy.hardcorebanr.impl
 
-val customConfig = """
+val banHammerMessagesConfig = """
    	{
    		"banChatMessage": [
    			"Player <red>${'$'}{banned}</red> has been banned by <gold>${'$'}{operator}</gold>!",
@@ -64,10 +64,10 @@ val customConfig = """
    			"<gray>By: </gray><yellow>${'$'}{operator}</yellow>"
    		],
    		"tempBanScreen": [
-   			"<red><bold>You got Banned for dying!</bold></red>",
-   			"<gray>Cause of death: </gray><yellow>${'$'}{reason}</yellow>",
-   			"<gray>You will be able to play again after: </gray><yellow>${'$'}{expiration_time}</yellow>",
-   			""
+   			"<red><bold>You are banned</bold></red>",
+   			"<gray>Reason: </gray><yellow>${'$'}{reason}</yellow>",
+   			"<gray>Expires in: </gray><yellow>${'$'}{expiration_time}</yellow>",
+   			"<gray>By: </gray><yellow>${'$'}{operator}</yellow>"
    		],
    		"ipBanScreen": [
    			"<red><bold>You are banned</bold></red>",

@@ -12,7 +12,7 @@ object HardcoreDeathHandler {
 //	private val config = HardcoreBanConfig.load()
 
 	fun onPlayerDeath(player: ServerPlayerEntity, damageSource: DamageSource) {
-		val config = HardcoreBanRevived.config
+		val config = HardcoreBanRevived.modConfig
 		if (!config.enableHardcoreBans) return
 
 		val deathCause = getDeathCause(damageSource)
