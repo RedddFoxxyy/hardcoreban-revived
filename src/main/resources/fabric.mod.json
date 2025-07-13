@@ -3,12 +3,12 @@
 	"id": "hardcoreban-revived",
 	"version": "${version}",
 	"name": "HardcoreBan-Revived",
-	"description": "A hardcore ban mod for server based on banhammer.",
+	"description": "A hardcore ban mod for fabric servers, based on banhammer.",
 	"authors": [
 		"RedddFoxxyy"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
+		"homepage": "https://github.com/RedddFoxxyy/hardcoreban-revived",
 		"sources": "https://github.com/RedddFoxxyy/hardcoreban-revived"
 	},
 	"license": "GPL-3.0",
@@ -36,7 +36,8 @@
 		"minecraft": "~1.21.7",
 		"java": ">=21",
 		"fabric-api": "*",
-		"fabric-language-kotlin": "*"
+		"fabric-language-kotlin": "*",
+		"banhammer": "0.14.0+1.21.6"
 	},
 	"suggests": {
 		"another-mod": "*"

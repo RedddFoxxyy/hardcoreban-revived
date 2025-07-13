@@ -1,10 +1,12 @@
-package net.redddfoxxyy.hardcorebanr
+package net.redddfoxxyy.hardcorebanr.impl
 
 import eu.pb4.banhammer.api.BanHammer
 import eu.pb4.banhammer.api.PunishmentData
 import eu.pb4.banhammer.api.PunishmentType
-import net.minecraft.server.network.ServerPlayerEntity
 import net.minecraft.entity.damage.DamageSource
+import net.minecraft.entity.damage.DamageTypes
+import net.minecraft.server.network.ServerPlayerEntity
+import net.redddfoxxyy.hardcorebanr.HardcoreBanRevived
 
 object HardcoreDeathHandler {
 //	private val config = HardcoreBanConfig.load()
@@ -32,10 +34,10 @@ object HardcoreDeathHandler {
 	private fun getDeathCause(damageSource: DamageSource): String {
 		return when {
 			damageSource.attacker != null -> "killed by ${damageSource.attacker!!.displayName?.string}"
-			damageSource.isOf(net.minecraft.entity.damage.DamageTypes.LAVA) -> "tried to swim in lava"
-			damageSource.isOf(net.minecraft.entity.damage.DamageTypes.FALL) -> "fell from high place"
-			damageSource.isOf(net.minecraft.entity.damage.DamageTypes.DROWN) -> "drowned"
-			damageSource.isOf(net.minecraft.entity.damage.DamageTypes.STARVE) -> "starved to death"
+			damageSource.isOf(DamageTypes.LAVA) -> "tried to swim in lava"
+			damageSource.isOf(DamageTypes.FALL) -> "fell from high place"
+			damageSource.isOf(DamageTypes.DROWN) -> "drowned"
+			damageSource.isOf(DamageTypes.STARVE) -> "starved to death"
 			else -> "died"
 		}
 	}
