@@ -1,6 +1,6 @@
 package net.redddfoxxyy.hardcorebanr.impl
 
-val banHammerMessagesConfig = """
+internal val banHammerMessagesConfig = """
    	{
    		"banChatMessage": [
    			"Player <red>${'$'}{banned}</red> has been banned by <gold>${'$'}{operator}</gold>!",
