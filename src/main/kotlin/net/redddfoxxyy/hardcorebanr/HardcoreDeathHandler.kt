@@ -7,9 +7,10 @@ import net.minecraft.server.network.ServerPlayerEntity
 import net.minecraft.entity.damage.DamageSource
 
 object HardcoreDeathHandler {
-	private val config = HardcoreBanConfig.load()
+//	private val config = HardcoreBanConfig.load()
 
 	fun onPlayerDeath(player: ServerPlayerEntity, damageSource: DamageSource) {
+		val config = HardcoreBanRevived.config
 		if (!config.enableHardcoreBans) return
 
 		val deathCause = getDeathCause(damageSource)

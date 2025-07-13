@@ -4,6 +4,7 @@ plugins {
 	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 	id "org.jetbrains.kotlin.jvm" version "2.2.0"
+	id 'org.jetbrains.kotlin.plugin.serialization' version '2.2.0' // For json serialisation
 }
 
 version = project.mod_version
@@ -20,6 +21,8 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven { url = 'https://jitpack.io' }
+
+	// Required for BanHammer related Dependencies
 	maven { url 'https://maven.nucleoid.xyz' }
 }
 
@@ -40,7 +43,6 @@ dependencies {
 	modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
 
 	// Ban Hammer and related dependencies (to handle bans)
-	//	modImplementation "eu.pb4:banhammer:0.14.0+1.21.6"
 	modImplementation 'com.github.Patbox:BanHammer:bed673c'
 	modImplementation 'me.lucko:fabric-permissions-api:0.3.4-patbox'
 	modImplementation "eu.pb4:placeholder-api:2.7.0+1.21.6"
@@ -48,6 +50,8 @@ dependencies {
 	implementation 'org.xerial:sqlite-jdbc:3.50.1.0'
 	implementation 'com.mysql:mysql-connector-j:9.3.0'
 	implementation 'org.postgresql:postgresql:42.7.7'
+
+	implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.8.1'
 }
 
 processResources {
