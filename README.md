@@ -1,4 +1,10 @@
-# HardcoreBan-Revived
+<div align="center">
+    <img src="./src/main/resources/assets/hardcoreban-revived/HardcoreBan-Revived-2048.png" width=512 alt="HardcoreBan-Revived">
+</div>
+
+<h1 align="center">
+HardcoreBan-Revived
+</h1>
 
 [](https://www.gnu.org/licenses/gpl-3.0)
 
